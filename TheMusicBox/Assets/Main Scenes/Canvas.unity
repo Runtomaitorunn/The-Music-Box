@@ -544,6 +544,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8002896639391984476, guid: c740676914688bf4a9804e60f6d20022, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002896639391984476, guid: c740676914688bf4a9804e60f6d20022, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002896639391984476, guid: c740676914688bf4a9804e60f6d20022, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9045129231689283071, guid: c740676914688bf4a9804e60f6d20022, type: 3}
       propertyPath: m_Name
       value: Canvas
