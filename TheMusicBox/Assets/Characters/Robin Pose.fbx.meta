@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f4bffbfa4b1fd1f4c9b81e816ffeaade
+guid: be3fc5185e724704b84c1ee70c4887fb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -12,13 +12,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Eyes
-    second: {fileID: 2100000, guid: 6d7aab9e9048cc04e8d3452bcb6df70c, type: 2}
+      name: Outline
+    second: {fileID: 2100000, guid: 5670204071b88fe44ad366838ca59229, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Outline
-    second: {fileID: 2100000, guid: 5670204071b88fe44ad366838ca59229, type: 2}
+      name: RobinFace
+    second: {fileID: 2100000, guid: 6d7aab9e9048cc04e8d3452bcb6df70c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
