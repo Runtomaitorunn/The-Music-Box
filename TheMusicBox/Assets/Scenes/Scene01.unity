@@ -692,6 +692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Robin Pose
       objectReference: {fileID: 0}
+    - target: {fileID: 1646733720424155422, guid: be3fc5185e724704b84c1ee70c4887fb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f1cf8ad0afa956140bd19214821eb9ee, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
