@@ -1,24 +1,31 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public enum ObjectType
 {
-    Static,
-    Dynamic,
-    Interactive
+    Required,
+    Optional
 }
 public class InteractableObject : MonoBehaviour
 {
+    [Header("Object Type")]
     public ObjectType objectType;
+
+    [Header("Required Object Actions")]
+    public UnityEvent onRequiredInteraction;
+
+    [Header("Optional Object Actions")]
+    public UnityEvent onOptionalInteraction;
 
     public void Interact()
     {
-        if(objectType == ObjectType.Interactive)
+        if(objectType == ObjectType.Required)
         {
-            // Have interaction logic here
+            onRequiredInteraction?.Invoke();
         }
         else
         {
-            // Don't interact
+            onOptionalInteraction?.Invoke();
         }
     }
 
