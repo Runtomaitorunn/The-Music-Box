@@ -1382,6 +1382,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dbec795bf06e1824eb5f37bd54713239, type: 3}
   m_PrefabInstance: {fileID: 825991719}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &882232700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882232702}
+  - component: {fileID: 882232701}
+  m_Layer: 0
+  m_Name: TransitionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &882232701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882232700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73798ca3cdb402e4c8889b5a75db057d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionObjectList:
+  - {fileID: 995534440}
+  - {fileID: 1627906888}
+  fadeOutDuration: 1
+  fadeInDuration: 1
+--- !u!4 &882232702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882232700}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8610501, y: 0.18728736, z: -0.090103984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &946623961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1595,13 +1644,61 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 78c03f19547b77f4d90061f6750686c2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 995534444}
   m_SourcePrefab: {fileID: 100100000, guid: 78c03f19547b77f4d90061f6750686c2, type: 3}
 --- !u!1 &995534440 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 78c03f19547b77f4d90061f6750686c2, type: 3}
   m_PrefabInstance: {fileID: 995534439}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &995534444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995534440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 42608496bff65794db779d28618e05fd, type: 2}
+    - {fileID: 11400000, guid: d2e9e78287b81f845a351827bb3c45e4, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 882232701}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: TriggerFadeOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 882232701}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: TriggerFadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1024614808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3024,6 +3121,18 @@ PlayableDirector:
     value: {fileID: 626743308}
   - key: {fileID: 944884688261634926, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
     value: {fileID: 1047481305}
+  - key: {fileID: -8308897734890338222, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1722822241794157858, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1566932377561146083, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -1497924940559185715, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7359299445488843769, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3657327608553950822, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1779068186
@@ -3510,3 +3619,4 @@ SceneRoots:
   - {fileID: 1314018775}
   - {fileID: 995534439}
   - {fileID: 1627906887}
+  - {fileID: 882232702}
