@@ -42,7 +42,7 @@ public class FadingTransitionLerp : MonoBehaviour
             if (mat != null)
             {
                 SetAlpha(mat, 0f); // Ensure it's transparent before fade-in
-                StartCoroutine(FadeAlpha(mat, 0f, 1f, fadeInDuration));
+                StartCoroutine(FadeAlpha(mat, 0f, 1f, fadeInDuration));//TO BE REMOVED CAUSE MAKE ANOTHER SCRIPT IN RESPONSIBLE FOR THIS WOULD BE BETTER
             }
 
             fadeInIndex++;
