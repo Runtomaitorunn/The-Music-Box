@@ -48,6 +48,7 @@ Material:
     m_Floats:
     - _AO_Value: 0.85
     - _Contrast: 1
+    - _Dither_Size: 1
     - _Grain_Scale: 0
     - _Grain_Value: 0
     - _Mix_Value: 1
@@ -67,6 +68,8 @@ Material:
     - _Value: 1
     m_Colors:
     - _AO_Color: {r: 0.45490196, g: 0.5254902, b: 0.6862745, a: 0}
+    - _Dither_Alpha: {r: 0, g: 0, b: 0, a: 0}
+    - _Dither_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Mix_Color: {r: 0.1, g: 0.1, b: 0.1, a: 0}
     - _ShadeColor: {r: 0.38823527, g: 0.50980395, b: 0.7411765, a: 0}
     - _Shade_Color: {r: 0, g: 0, b: 0, a: 0}
