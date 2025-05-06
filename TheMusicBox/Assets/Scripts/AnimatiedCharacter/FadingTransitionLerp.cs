@@ -8,6 +8,11 @@ public class FadingTransitionLerp : MonoBehaviour
     [Tooltip("Only GameObjects can be added to this list!")]
     [SerializeField] private List<GameObject> transitionPosesList = new List<GameObject>();
 
+    [Header("Fade Settings")]
+    [SerializeField] private float fadeDuration = 1f;
+
+    [SerializeField] private List<Material> allMaterials = new List<Material>();
+
 
     private void Start()
     {
@@ -20,7 +25,13 @@ public class FadingTransitionLerp : MonoBehaviour
     /// </summary>
     public void FadeOut()
     {
-
+        foreach (Material mat in allMaterials)
+        {
+            if (mat.HasProperty("_Transparent_Value"))
+            {
+                StartCoroutine(FadeMaterialTransparency(mat, 0f, 1f, fadeDuration));
+            }
+        }
     }
 
     /// <summary>
@@ -28,6 +39,13 @@ public class FadingTransitionLerp : MonoBehaviour
     /// </summary>
     public void FadeIn()
     {
+        foreach (Material mat in allMaterials)
+        {
+            if (mat.HasProperty("_Transparent_Value"))
+            {
+                StartCoroutine(FadeMaterialTransparency(mat, 1f, 0f, fadeDuration));
+            }
+        }
 
     }
 
@@ -36,7 +54,6 @@ public class FadingTransitionLerp : MonoBehaviour
     /// </summary>
     public void CheckMaterialTransparency()
     {
-        List<Material> allMaterials = new List<Material>();
 
         foreach (GameObject obj in transitionPosesList)
         {
@@ -70,6 +87,24 @@ public class FadingTransitionLerp : MonoBehaviour
                 Debug.Log($"Material '{mat.name}' does not have Transparent Value");
             }
         }
+    }
+
+    /// <summary>
+    /// Coroutine to lerp a material's transparency
+    /// </summary>
+    private IEnumerator FadeMaterialTransparency(Material mat, float from, float to, float duration)
+    {
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            float value = Mathf.Lerp(from, to, elapsed / duration);
+            mat.SetFloat("_Transparent_Value", value);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        mat.SetFloat("_Transparent_Value", to); // Ensure final value is set
     }
 }
 
