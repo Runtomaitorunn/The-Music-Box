@@ -11,7 +11,7 @@ public class FadingTransitionLerp : MonoBehaviour
 
     private void Start()
     {
-        CheckMaterialByName();
+        CheckMaterialTransparency();
 
 
     }
@@ -34,8 +34,10 @@ public class FadingTransitionLerp : MonoBehaviour
     /// <summary>
     /// Check the material named 'BaseColor'
     /// </summary>
-    public void CheckMaterialByName()
+    public void CheckMaterialTransparency()
     {
+        List<Material> allMaterials = new List<Material>();
+
         foreach (GameObject obj in transitionPosesList)
         {
             if (obj == null) continue;
@@ -49,11 +51,25 @@ public class FadingTransitionLerp : MonoBehaviour
 
             foreach (Material mat in meshRenderer.materials)
             {
-                if (mat.name.StartsWith("BaseColor")) 
+                if (!allMaterials.Contains(mat)) // ±‹√‚÷ÿ∏¥
                 {
-                    Debug.Log($"yes basecolor got it on: {obj.name}");
+                    allMaterials.Add(mat);
                 }
+            }
+        }
+
+        foreach (Material mat in allMaterials)
+        {
+            if (mat.HasProperty("_Transparent_Value"))
+            {
+                float value = mat.GetFloat("_Transparent_Value");
+                Debug.Log($"Material '{mat.name}' has Transparent Value: {value}");
+            }
+            else
+            {
+                Debug.Log($"Material '{mat.name}' does not have Transparent Value");
             }
         }
     }
 }
+
