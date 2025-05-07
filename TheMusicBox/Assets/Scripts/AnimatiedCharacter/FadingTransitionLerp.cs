@@ -11,80 +11,86 @@ public class FadingTransitionLerp : MonoBehaviour
     [Header("Fade Settings")]
     [SerializeField] private float fadeDuration = 1f;
 
-    [SerializeField] private List<Material> allMaterials = new List<Material>();
+    [SerializeField] private List<Material> materialsToFadeOut = new List<Material>();
+    [SerializeField] private List<Material> materialsToFadeIn = new List<Material>();
+
+    [SerializeField] private int fadeOutIndex = 0;
+    [SerializeField] private int fadeInIndex = 1;
 
 
     private void Start()
     {
-        CheckMaterialTransparency();
 
 
     }
     /// <summary>
-    /// Function controls fading out 
+    ///  Fades out materials from the current fadeOutIndex object.
     /// </summary>
     public void FadeOut()
     {
-        foreach (Material mat in allMaterials)
+        materialsToFadeOut.Clear();
+
+        if (fadeOutIndex < 0 || fadeOutIndex >= transitionPosesList.Count)
         {
-            if (mat.HasProperty("_Transparent_Value"))
-            {
-                StartCoroutine(FadeMaterialTransparency(mat, 0f, 1f, fadeDuration));
-            }
+            Debug.LogWarning("FadeOut index out of range.");
+            return;
         }
+
+        GameObject obj = transitionPosesList[fadeOutIndex];
+        CollectMaterialsWithTransparency(obj, materialsToFadeOut);
+
+        foreach (Material mat in materialsToFadeOut)
+        {
+            StartCoroutine(FadeMaterialTransparency(mat, 0f, 1f, fadeDuration));
+        }
+
+        fadeOutIndex++;
     }
 
     /// <summary>
-    /// Function controls fading in
+    /// Fades in materials from the current fadeInIndex object.
     /// </summary>
     public void FadeIn()
     {
-        foreach (Material mat in allMaterials)
+        materialsToFadeIn.Clear();
+
+        if (fadeInIndex < 0 || fadeInIndex >= transitionPosesList.Count)
         {
-            if (mat.HasProperty("_Transparent_Value"))
-            {
-                StartCoroutine(FadeMaterialTransparency(mat, 1f, 0f, fadeDuration));
-            }
+            Debug.LogWarning("FadeIn index out of range.");
+            return;
         }
+
+        GameObject obj = transitionPosesList[fadeInIndex];
+        CollectMaterialsWithTransparency(obj, materialsToFadeIn);
+
+        foreach (Material mat in materialsToFadeIn)
+        {
+            StartCoroutine(FadeMaterialTransparency(mat, 1f, 0f, fadeDuration));
+        }
+
+        fadeInIndex++;
 
     }
 
     /// <summary>
-    /// Check the material named 'BaseColor'
+    /// Collect all materials with "_Transparent_Value" from an object.
     /// </summary>
-    public void CheckMaterialTransparency()
+    private void CollectMaterialsWithTransparency(GameObject obj, List<Material> targetList)
     {
+        if (obj == null) return;
 
-        foreach (GameObject obj in transitionPosesList)
+        MeshRenderer renderer = obj.GetComponent<MeshRenderer>();
+        if (renderer == null)
         {
-            if (obj == null) continue;
-
-            MeshRenderer meshRenderer = obj.GetComponent<MeshRenderer>();
-            if (meshRenderer == null)
-            {
-                Debug.LogWarning($"No MeshRenderer on: {obj.name}");
-                continue;
-            }
-
-            foreach (Material mat in meshRenderer.materials)
-            {
-                if (!allMaterials.Contains(mat)) // ±‹√‚÷ÿ∏¥
-                {
-                    allMaterials.Add(mat);
-                }
-            }
+            Debug.LogWarning($"No MeshRenderer on: {obj.name}");
+            return;
         }
 
-        foreach (Material mat in allMaterials)
+        foreach (Material mat in renderer.materials)
         {
             if (mat.HasProperty("_Transparent_Value"))
             {
-                float value = mat.GetFloat("_Transparent_Value");
-                Debug.Log($"Material '{mat.name}' has Transparent Value: {value}");
-            }
-            else
-            {
-                Debug.Log($"Material '{mat.name}' does not have Transparent Value");
+                targetList.Add(mat);
             }
         }
     }
