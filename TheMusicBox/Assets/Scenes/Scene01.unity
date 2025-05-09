@@ -2918,6 +2918,10 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: -1497924940559185715, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
     value: {fileID: 0}
+  - key: {fileID: -3094873200244527300, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 135574273}
+  - key: {fileID: -6958203049362852467, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 1559942525}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1779068186
@@ -3399,6 +3403,6 @@ SceneRoots:
   - {fileID: 1455021399}
   - {fileID: 666398687}
   - {fileID: 685562961}
+  - {fileID: 1047481304}
   - {fileID: 1779068186}
   - {fileID: 526135542}
-  - {fileID: 1047481304}
