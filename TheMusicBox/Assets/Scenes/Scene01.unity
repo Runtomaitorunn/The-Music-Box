@@ -369,7 +369,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 78c03f19547b77f4d90061f6750686c2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 135574274}
   m_SourcePrefab: {fileID: 100100000, guid: 78c03f19547b77f4d90061f6750686c2, type: 3}
 --- !u!4 &135574272 stripped
 Transform:
@@ -381,6 +384,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 78c03f19547b77f4d90061f6750686c2, type: 3}
   m_PrefabInstance: {fileID: 135574271}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &135574274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135574273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 42608496bff65794db779d28618e05fd, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 526135543}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &279600066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -685,10 +718,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionPosesList:
   - {fileID: 135574273}
-  - {fileID: 1275206144}
-  - {fileID: 91567642}
   - {fileID: 1559942525}
   - {fileID: 331395404}
+  - {fileID: 1275206144}
+  - {fileID: 91567642}
   - {fileID: 482901731}
   - {fileID: 1506980858}
   - {fileID: 825991721}
@@ -2617,7 +2650,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57b99e614206e01439cc721760aec39f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1559942526}
   m_SourcePrefab: {fileID: 100100000, guid: 57b99e614206e01439cc721760aec39f, type: 3}
 --- !u!4 &1559942524 stripped
 Transform:
@@ -2629,6 +2665,51 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 57b99e614206e01439cc721760aec39f, type: 3}
   m_PrefabInstance: {fileID: 1559942523}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1559942526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559942525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: d2e9e78287b81f845a351827bb3c45e4, type: 2}
+    - {fileID: 11400000, guid: 42608496bff65794db779d28618e05fd, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 526135543}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 526135543}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1568008739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2922,6 +3003,18 @@ PlayableDirector:
     value: {fileID: 135574273}
   - key: {fileID: -6958203049362852467, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
     value: {fileID: 1559942525}
+  - key: {fileID: 1723325070660851210, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 331395404}
+  - key: {fileID: 8404498901164275220, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 1275206144}
+  - key: {fileID: -5837300800111895216, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 91567642}
+  - key: {fileID: 7906602850619128903, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 482901731}
+  - key: {fileID: -1470473657310134978, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 1506980858}
+  - key: {fileID: -1489527741570898155, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 825991721}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1779068186
