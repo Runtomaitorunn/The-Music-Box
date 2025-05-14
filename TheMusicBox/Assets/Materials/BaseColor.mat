@@ -50,7 +50,7 @@ Material:
     - _Contrast: 1.2
     - _Dither_Size: 1
     - _Grain_Scale: 1000
-    - _Grain_Value: 0.1
+    - _Grain_Value: 0.15
     - _Mix_Value: 0
     - _Noise_Contrast: 0.15
     - _Noise_Scale: 0.03
