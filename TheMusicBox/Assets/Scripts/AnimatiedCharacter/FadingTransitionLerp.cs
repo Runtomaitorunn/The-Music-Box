@@ -9,13 +9,15 @@ public class FadingTransitionLerp : MonoBehaviour
     [SerializeField] private List<GameObject> transitionPosesList = new List<GameObject>();
 
     [Header("Fade Settings")]
-    [SerializeField] private float fadeDuration = 1f;
+    public List<float> transitionDurations = new List<float>();
+    [Tooltip("Default fade duration (used if no specific duration provided)")]
+    public float defaultFadeDuration = 1f;
 
-    [SerializeField] private List<Material> materialsToFadeOut = new List<Material>();
-    [SerializeField] private List<Material> materialsToFadeIn = new List<Material>();
+    public List<Material> materialsToFadeOut = new List<Material>();
+    public List<Material> materialsToFadeIn = new List<Material>();
 
     [SerializeField] private int fadeOutIndex = 0;
-    [SerializeField] private int fadeInIndex = 1;
+    [SerializeField] private int fadeInIndex = 0;
 
 
     private void Start()
@@ -37,11 +39,12 @@ public class FadingTransitionLerp : MonoBehaviour
         }
 
         GameObject obj = transitionPosesList[fadeOutIndex];
+        float duration = GetFadeDuration(fadeOutIndex);
         CollectMaterialsWithTransparency(obj, materialsToFadeOut);
 
         foreach (Material mat in materialsToFadeOut)
         {
-            StartCoroutine(FadeMaterialTransparency(mat, 0f, 1f, fadeDuration));
+            StartCoroutine(FadeMaterialTransparency(mat, 0f, 1f, duration));
         }
 
         fadeOutIndex++;
@@ -61,11 +64,12 @@ public class FadingTransitionLerp : MonoBehaviour
         }
 
         GameObject obj = transitionPosesList[fadeInIndex];
+        float duration = GetFadeDuration(fadeOutIndex);
         CollectMaterialsWithTransparency(obj, materialsToFadeIn);
 
         foreach (Material mat in materialsToFadeIn)
         {
-            StartCoroutine(FadeMaterialTransparency(mat, 1f, 0f, fadeDuration));
+            StartCoroutine(FadeMaterialTransparency(mat, 1f, 0f, duration));
         }
 
         fadeInIndex++;
@@ -111,6 +115,19 @@ public class FadingTransitionLerp : MonoBehaviour
         }
 
         mat.SetFloat("_Transparent_Value", to); // Ensure final value is set
+    }
+
+    /// <summary>
+    /// Safely get fade duration for given index.
+    /// </summary>
+    private float GetFadeDuration(int index)
+    {
+        if (index >= 0 && index < transitionDurations.Count)
+        {
+            return transitionDurations[index];
+        }
+
+        return defaultFadeDuration;
     }
 }
 
