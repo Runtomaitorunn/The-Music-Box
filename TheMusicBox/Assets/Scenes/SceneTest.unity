@@ -3388,11 +3388,21 @@ MonoBehaviour:
   transitionPosesList:
   - {fileID: 995534440}
   - {fileID: 1627906888}
-  fadeDuration: 1
+  fadeInDurations:
+  - 1
+  - 2
+  - 0
+  - 0
+  fadeOutDurations:
+  - 2
+  - 1
+  - 0
+  - 0
+  defaultFadeDuration: 0.5
   materialsToFadeOut: []
   materialsToFadeIn: []
   fadeOutIndex: 0
-  fadeInIndex: 1
+  fadeInIndex: 0
 --- !u!1 &1854550726
 GameObject:
   m_ObjectHideFlags: 0
