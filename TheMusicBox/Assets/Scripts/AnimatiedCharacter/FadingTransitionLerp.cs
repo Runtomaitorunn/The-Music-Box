@@ -9,7 +9,12 @@ public class FadingTransitionLerp : MonoBehaviour
     [SerializeField] private List<GameObject> transitionPosesList = new List<GameObject>();
 
     [Header("Fade Settings")]
-    public List<float> transitionDurations = new List<float>();
+    [Tooltip("Fade-in durations for each transition object")]
+    public List<float> fadeInDurations = new List<float>();
+
+    [Tooltip("Fade-out durations for each transition object")]
+    public List<float> fadeOutDurations = new List<float>();
+
     [Tooltip("Default fade duration (used if no specific duration provided)")]
     public float defaultFadeDuration = 1f;
 
@@ -39,7 +44,7 @@ public class FadingTransitionLerp : MonoBehaviour
         }
 
         GameObject obj = transitionPosesList[fadeOutIndex];
-        float duration = GetFadeDuration(fadeOutIndex);
+        float duration = GetFadeOutDuration(fadeOutIndex);
         CollectMaterialsWithTransparency(obj, materialsToFadeOut);
 
         foreach (Material mat in materialsToFadeOut)
@@ -64,7 +69,7 @@ public class FadingTransitionLerp : MonoBehaviour
         }
 
         GameObject obj = transitionPosesList[fadeInIndex];
-        float duration = GetFadeDuration(fadeOutIndex);
+        float duration = GetFadeInDuration(fadeOutIndex);
         CollectMaterialsWithTransparency(obj, materialsToFadeIn);
 
         foreach (Material mat in materialsToFadeIn)
@@ -118,13 +123,26 @@ public class FadingTransitionLerp : MonoBehaviour
     }
 
     /// <summary>
-    /// Safely get fade duration for given index.
+    /// Safely get fade-in duration for given index.
     /// </summary>
-    private float GetFadeDuration(int index)
+    private float GetFadeInDuration(int index)
     {
-        if (index >= 0 && index < transitionDurations.Count)
+        if (index >= 0 && index < fadeInDurations.Count)
         {
-            return transitionDurations[index];
+            return fadeInDurations[index];
+        }
+
+        return defaultFadeDuration;
+    }
+
+    /// <summary>
+    /// Safely get fade-out duration for given index.
+    /// </summary>
+    private float GetFadeOutDuration(int index)
+    {
+        if (index >= 0 && index < fadeOutDurations.Count)
+        {
+            return fadeOutDurations[index];
         }
 
         return defaultFadeDuration;
