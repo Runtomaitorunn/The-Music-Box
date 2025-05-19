@@ -149,13 +149,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionPosesList:
+  - {fileID: 995534440}
+  - {fileID: 1627906888}
   - {fileID: 1226080570}
   - {fileID: 1226080568}
   - {fileID: 1226080569}
   - {fileID: 808951647}
-  - {fileID: 995534440}
-  - {fileID: 1627906888}
   fadeInDurations:
+  - 1
+  - 1
   - 1
   - 1
   - 1
@@ -165,11 +167,13 @@ MonoBehaviour:
   - 1
   - 1
   - 1
+  - 1
+  - 1
   defaultFadeDuration: 1
   materialsToFadeOut: []
   materialsToFadeIn: []
   fadeOutIndex: 0
-  fadeInIndex: 0
+  fadeInIndex: 1
 --- !u!4 &335375258
 Transform:
   m_ObjectHideFlags: 0
