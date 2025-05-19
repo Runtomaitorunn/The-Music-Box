@@ -2503,11 +2503,24 @@ MonoBehaviour:
   transitionPosesList:
   - {fileID: 946623965}
   - {fileID: 1582302928}
+  - {fileID: 2129883959}
   - {fileID: 1910283557}
   - {fileID: 1855304921}
   - {fileID: 1336463889}
-  fadeInDurations: []
-  fadeOutDurations: []
+  fadeInDurations:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  fadeOutDurations:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   defaultFadeDuration: 1
   materialsToFadeOut: []
   materialsToFadeIn: []
@@ -3074,6 +3087,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2703229899678404817, guid: 581b5b91cc0514b4cbfdc868b59664a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1582302932}
+    - targetCorrespondingSourceObject: {fileID: 8278052507069681292, guid: 581b5b91cc0514b4cbfdc868b59664a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2129883960}
   m_SourcePrefab: {fileID: 100100000, guid: 581b5b91cc0514b4cbfdc868b59664a1, type: 3}
 --- !u!1 &1582302928 stripped
 GameObject:
@@ -3397,6 +3413,8 @@ PlayableDirector:
     value: {fileID: 1855304921}
   - key: {fileID: 9098474789023343513, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
     value: {fileID: 1336463889}
+  - key: {fileID: 6955931505511668499, guid: 238bd204bb82b384794d9f8d8aba72ee, type: 2}
+    value: {fileID: 2129883959}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1779068186
@@ -3846,6 +3864,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 621fdead9fe5829478e7b9ed7d2bedbe, type: 3}
   m_PrefabInstance: {fileID: 2112211914}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2129883959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278052507069681292, guid: 581b5b91cc0514b4cbfdc868b59664a1, type: 3}
+  m_PrefabInstance: {fileID: 1582302927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2129883960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129883959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: d2e9e78287b81f845a351827bb3c45e4, type: 2}
+    - {fileID: 11400000, guid: 42608496bff65794db779d28618e05fd, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1432209565}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1432209565}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
