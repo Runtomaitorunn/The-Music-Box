@@ -821,7 +821,25 @@ MonoBehaviour:
   - {fileID: 482901731}
   - {fileID: 1506980858}
   - {fileID: 825991721}
-  fadeDuration: 1
+  fadeInDurations:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  fadeOutDurations:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  defaultFadeDuration: 1
   materialsToFadeOut: []
   materialsToFadeIn: []
   fadeOutIndex: 0
@@ -2488,7 +2506,9 @@ MonoBehaviour:
   - {fileID: 1910283557}
   - {fileID: 1855304921}
   - {fileID: 1336463889}
-  fadeDuration: 1
+  fadeInDurations: []
+  fadeOutDurations: []
+  defaultFadeDuration: 1
   materialsToFadeOut: []
   materialsToFadeIn: []
   fadeOutIndex: 0
