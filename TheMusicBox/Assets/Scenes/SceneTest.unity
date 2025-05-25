@@ -154,6 +154,121 @@ Transform:
   - {fileID: 335375258}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &235803605
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 347997653}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.364
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.979
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      propertyPath: m_Name
+      value: Pigeon03
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 235803608}
+  m_SourcePrefab: {fileID: 100100000, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+--- !u!1 &235803606 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+  m_PrefabInstance: {fileID: 235803605}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &235803607 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d02686f3f3ea4748a253bf1a5b963d6, type: 3}
+  m_PrefabInstance: {fileID: 235803605}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &235803608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235803606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: d2e9e78287b81f845a351827bb3c45e4, type: 2}
+    - {fileID: 11400000, guid: 42608496bff65794db779d28618e05fd, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1783639087}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1783639087}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &335375256
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +327,157 @@ MonoBehaviour:
   materialsToFadeIn: []
   fadeOutIndex: 0
   fadeInIndex: 0
+--- !u!1 &347997652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 347997653}
+  m_Layer: 0
+  m_Name: Simultaneous Transitions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &347997653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347997652}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1722192039}
+  - {fileID: 360933257}
+  - {fileID: 235803607}
+  - {fileID: 1692516800}
+  - {fileID: 1783639086}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &360933255
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 347997653}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.053
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.478
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.116
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9753198
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.10633007
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.17878245
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.07404053
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -10.424
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 21.753
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -10.691
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      propertyPath: m_Name
+      value: Pigeon02
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 360933258}
+  m_SourcePrefab: {fileID: 100100000, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+--- !u!1 &360933256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+  m_PrefabInstance: {fileID: 360933255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &360933257 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
+  m_PrefabInstance: {fileID: 360933255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &360933258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360933256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: d2e9e78287b81f845a351827bb3c45e4, type: 2}
+    - {fileID: 11400000, guid: 42608496bff65794db779d28618e05fd, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1783639087}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1783639087}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &537098492
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +1034,37 @@ MonoBehaviour:
   materialsToFadeIn: []
   fadeOutIndex: 0
   fadeInIndex: 0
+--- !u!1 &1516720112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1516720113}
+  m_Layer: 0
+  m_Name: '[Turn ON "Play On Awake" to Test Timelines]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1516720113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516720112}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9674015, y: 0.4205431, z: 0.08821002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1624338148
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +1237,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57b99e614206e01439cc721760aec39f, type: 3}
   m_PrefabInstance: {fileID: 1627906887}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1692516799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1692516800}
+  - component: {fileID: 1692516801}
+  m_Layer: 0
+  m_Name: Timeline03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1692516800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692516799}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 347997653}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1692516801
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692516799}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: a157e807d1bef7e4f83e4c0ec2bcc808, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 6948458933332797688, guid: a157e807d1bef7e4f83e4c0ec2bcc808, type: 2}
+    value: {fileID: 1722192038}
+  - key: {fileID: -8674802693203685126, guid: a157e807d1bef7e4f83e4c0ec2bcc808, type: 2}
+    value: {fileID: 360933256}
+  - key: {fileID: 5208313288060238979, guid: a157e807d1bef7e4f83e4c0ec2bcc808, type: 2}
+    value: {fileID: 235803606}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1716533774
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1345,182 @@ Transform:
   m_Children: []
   m_Father: {fileID: 29918595}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1722192037
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 347997653}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.846
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.473
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8936028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.09534912
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.43031517
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.08492098
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -5.585
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -52.092
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 13.589
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      propertyPath: m_Name
+      value: Pigeon01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1722192040}
+  m_SourcePrefab: {fileID: 100100000, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+--- !u!1 &1722192038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+  m_PrefabInstance: {fileID: 1722192037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1722192039 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 693384234b8bb424ba09e6b2c2654ffa, type: 3}
+  m_PrefabInstance: {fileID: 1722192037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1722192040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722192038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: d2e9e78287b81f845a351827bb3c45e4, type: 2}
+    - {fileID: 11400000, guid: 42608496bff65794db779d28618e05fd, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1783639087}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1783639087}
+          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
+          m_MethodName: FadeOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &1783639085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1783639086}
+  - component: {fileID: 1783639087}
+  m_Layer: 0
+  m_Name: Transitions03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1783639086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783639085}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 347997653}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783639087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783639085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73798ca3cdb402e4c8889b5a75db057d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionPosesList:
+  - {fileID: 1722192038}
+  - {fileID: 360933256}
+  - {fileID: 235803606}
+  fadeInDurations:
+  - 1
+  - 1
+  - 1
+  fadeOutDurations:
+  - 1
+  - 1
+  - 1
+  defaultFadeDuration: 1
+  materialsToFadeOut: []
+  materialsToFadeIn: []
+  fadeOutIndex: 0
+  fadeInIndex: 0
 --- !u!1001 &1966533098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1151,7 +1679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2042824548}
   m_Layer: 0
-  m_Name: Hatch Opening
+  m_Name: Unfinished Transitions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1182,4 +1710,6 @@ SceneRoots:
   - {fileID: 537098495}
   - {fileID: 1249454272}
   - {fileID: 29918595}
+  - {fileID: 347997653}
   - {fileID: 2042824548}
+  - {fileID: 1516720113}
