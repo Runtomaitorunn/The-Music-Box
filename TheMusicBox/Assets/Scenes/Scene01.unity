@@ -4220,7 +4220,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 8cb6e8db3d20c5b47999d207567c9a59, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -7348,7 +7348,7 @@ SceneRoots:
   - {fileID: 121018126}
   - {fileID: 297566108}
   - {fileID: 2073101052}
-  - {fileID: 1939492934}
   - {fileID: 1873841473}
+  - {fileID: 1939492934}
   - {fileID: 1185653992}
   - {fileID: 603714346}
