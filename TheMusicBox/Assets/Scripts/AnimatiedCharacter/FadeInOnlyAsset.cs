@@ -9,7 +9,7 @@ public class FadeInOnlyAsset : FadeMode
     {
         if (signalTypeInt == 0) // FadeIn
         {
-            executor.Fade(obj, signalTypeInt, fadeInDuration, context);
+            executor.Fade(obj, 0, fadeInDuration, context);
         }
     }
 }

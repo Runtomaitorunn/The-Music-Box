@@ -18,7 +18,7 @@ public class FadeTransitionManager : MonoBehaviour
         [HideInInspector] public bool fadeOutReceived = false;
     }
 
-    public void FadeOutSignal( string objectId)
+    public void FadeOutSignal(string objectId)
     {
         foreach (var entry in transitionEntries)
         {
@@ -29,7 +29,6 @@ public class FadeTransitionManager : MonoBehaviour
                 continue;
 
             if (entry.fadeOutReceived) return; 
-            entry.fadeOutReceived = true;
 
             entry.fadeMode.ApplyFade(
                 entry.target,
@@ -59,7 +58,6 @@ public class FadeTransitionManager : MonoBehaviour
                 continue;
 
             if (entry.fadeInReceived) return; 
-            entry.fadeInReceived = true;
 
             entry.fadeMode.ApplyFade(
                 entry.target,

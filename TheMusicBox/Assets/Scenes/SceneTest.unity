@@ -214,6 +214,72 @@ Transform:
   - {fileID: 2094203}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &229847685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 229847686}
+  - component: {fileID: 229847687}
+  m_Layer: 0
+  m_Name: DELETEME
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &229847686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229847685}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2042824548}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &229847687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229847685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb39bc0c70f4a840ac1f146e8c17b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionEntries:
+  - target: {fileID: 1966533100}
+    fadeMode: {fileID: 11400000, guid: 3600b5a1f4c62084991ea9e31f64cb37, type: 2}
+    objectId: door1
+    fadeInDuration: 0
+    fadeOutDuration: 0.5
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 585804522}
+    fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
+    objectId: door0101
+    fadeInDuration: 1
+    fadeOutDuration: 0
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 1966533099}
+    fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
+    objectId: swing01
+    fadeInDuration: 2
+    fadeOutDuration: 0
+    fadeInReceived: 0
+    fadeOutReceived: 0
 --- !u!1001 &235803605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -303,30 +369,30 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1261379008}
           m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
-          m_MethodName: ReceiveSignal
-          m_Mode: 3
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: 003
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1261379008}
           m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
-          m_MethodName: ReceiveSignal
-          m_Mode: 3
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: 003
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &335375256
@@ -413,10 +479,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1722192039}
-  - {fileID: 360933257}
   - {fileID: 235803607}
+  - {fileID: 360933257}
   - {fileID: 1692516800}
   - {fileID: 1783639086}
+  - {fileID: 1261379007}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &360933255
@@ -508,30 +575,30 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1261379008}
           m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
-          m_MethodName: ReceiveSignal
-          m_Mode: 3
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: 002
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1261379008}
           m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
-          m_MethodName: ReceiveSignal
-          m_Mode: 3
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: 002
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &537098492
@@ -723,16 +790,16 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1281141695}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeIn
-          m_Mode: 1
+        - m_Target: {fileID: 229847687}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: door0101
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!23 &585804525
@@ -1029,6 +1096,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: 90, z: 0}
+--- !u!1 &1261379006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1261379007}
+  - component: {fileID: 1261379008}
+  m_Layer: 0
+  m_Name: DELETEME
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1261379007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261379006}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 347997653}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1261379008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261379006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb39bc0c70f4a840ac1f146e8c17b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionEntries:
+  - target: {fileID: 1722192038}
+    fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
+    objectId: 001
+    fadeInDuration: 2
+    fadeOutDuration: 0.5
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 360933256}
+    fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
+    objectId: 002
+    fadeInDuration: 2
+    fadeOutDuration: 0.5
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 235803606}
+    fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
+    objectId: 003
+    fadeInDuration: 2
+    fadeOutDuration: 0.5
+    fadeInReceived: 0
+    fadeOutReceived: 0
 --- !u!1 &1281141693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,30 +1617,30 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1261379008}
           m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
-          m_MethodName: ReceiveSignal
-          m_Mode: 3
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: 001
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1261379008}
           m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
-          m_MethodName: ReceiveSignal
-          m_Mode: 3
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: 001
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1783639085
@@ -1671,16 +1804,16 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1281141695}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeIn
-          m_Mode: 1
+        - m_Target: {fileID: 229847687}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: swing01
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1966533104
@@ -1701,16 +1834,16 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1281141695}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeOut
-          m_Mode: 1
+        - m_Target: {fileID: 229847687}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: door1
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &2042824547
@@ -1745,6 +1878,7 @@ Transform:
   - {fileID: 1966533102}
   - {fileID: 1624338149}
   - {fileID: 1281141694}
+  - {fileID: 229847686}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807

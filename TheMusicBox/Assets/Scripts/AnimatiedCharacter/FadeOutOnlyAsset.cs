@@ -8,6 +8,6 @@ public class FadeOutOnlyAsset : FadeMode
         float fadeInDuration, float fadeOutDuration)
     {
         if (signalTypeInt == 1) // 1 = FadeOut
-            executor.Fade(obj, signalTypeInt, fadeOutDuration, context);
+            executor.Fade(obj, 1, fadeOutDuration, context);
     }
 }
