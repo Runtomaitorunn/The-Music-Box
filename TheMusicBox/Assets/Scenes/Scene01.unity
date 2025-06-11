@@ -540,30 +540,30 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeIn
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: c01s01r01p01
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeOut
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: c01s01r01p01
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &147355616
@@ -852,9 +852,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionPosesList: []
+  fadeInDurations: []
+  fadeOutDurations: []
   defaultFadeDuration: 1
-  materialsToFade: []
-  currentIndex: 0
+  materialsToFadeOut: []
+  materialsToFadeIn: []
+  fadeOutIndex: 0
+  fadeInIndex: 0
 --- !u!1 &245504720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1283,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -2400,9 +2404,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionPosesList: []
+  fadeInDurations: []
+  fadeOutDurations: []
   defaultFadeDuration: 1
-  materialsToFade: []
-  currentIndex: 0
+  materialsToFadeOut: []
+  materialsToFadeIn: []
+  fadeOutIndex: 0
+  fadeInIndex: 0
 --- !u!1001 &665996488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2855,7 +2863,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -2956,7 +2964,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -2970,7 +2978,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeOut
           m_Mode: 1
@@ -3140,16 +3148,16 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeOut
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: HatchDoor01-01
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1001 &966872588
@@ -3241,7 +3249,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -3255,7 +3263,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeOut
           m_Mode: 1
@@ -3461,7 +3469,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -3475,7 +3483,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeOut
           m_Mode: 1
@@ -3706,9 +3714,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionPosesList: []
+  fadeInDurations: []
+  fadeOutDurations: []
   defaultFadeDuration: 1
-  materialsToFade: []
-  currentIndex: 0
+  materialsToFadeOut: []
+  materialsToFadeIn: []
+  fadeOutIndex: 0
+  fadeInIndex: 0
 --- !u!1001 &1102084038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4672,7 +4684,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -4686,7 +4698,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeOut
           m_Mode: 1
@@ -4953,7 +4965,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1432209566}
-  - component: {fileID: 1432209565}
+  - component: {fileID: 1432209567}
   m_Layer: 0
   m_Name: Transitions (c01s01r01)
   m_TagString: Untagged
@@ -4961,130 +4973,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1432209565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1432209564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73798ca3cdb402e4c8889b5a75db057d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionPosesList:
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  defaultFadeDuration: 1
-  materialsToFade: []
-  currentIndex: 0
 --- !u!4 &1432209566
 Transform:
   m_ObjectHideFlags: 0
@@ -5100,6 +4988,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 121018126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1432209567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432209564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb39bc0c70f4a840ac1f146e8c17b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionEntries:
+  - target: {fileID: 946623965}
+    fadeMode: {fileID: 11400000, guid: 3600b5a1f4c62084991ea9e31f64cb37, type: 2}
+    objectId: HatchDoor01-01
+    fadeInDuration: 0
+    fadeOutDuration: 1
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 1642387881}
+    fadeMode: {fileID: 11400000, guid: b6fc42226e997c74e96cbcd60cbb4a8d, type: 2}
+    objectId: HatchDoor01-02
+    fadeInDuration: 1
+    fadeOutDuration: 0
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 2030723288}
+    fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
+    objectId: LinesSwing01-01
+    fadeInDuration: 1
+    fadeOutDuration: 1
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 1910283557}
+    fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
+    objectId: Pigeon01
+    fadeInDuration: 1
+    fadeOutDuration: 1
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 1855304921}
+    fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
+    objectId: Pigeon02
+    fadeInDuration: 1
+    fadeOutDuration: 1
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 1336463889}
+    fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
+    objectId: Pigeon03
+    fadeInDuration: 1
+    fadeOutDuration: 1
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 135574273}
+    fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
+    objectId: c01s01r01p01
+    fadeInDuration: 1
+    fadeOutDuration: 1
+    fadeInReceived: 0
+    fadeOutReceived: 0
 --- !u!1 &1434406419
 GameObject:
   m_ObjectHideFlags: 0
@@ -5145,9 +5095,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionPosesList: []
+  fadeInDurations: []
+  fadeOutDurations: []
   defaultFadeDuration: 1
-  materialsToFade: []
-  currentIndex: 0
+  materialsToFadeOut: []
+  materialsToFadeIn: []
+  fadeOutIndex: 0
+  fadeInIndex: 0
 --- !u!1 &1448641075
 GameObject:
   m_ObjectHideFlags: 0
@@ -5320,7 +5274,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -5334,7 +5288,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeOut
           m_Mode: 1
@@ -5430,30 +5384,30 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeIn
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Pigeon03
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeOut
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Pigeon03
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1001 &1524550825
@@ -5563,9 +5517,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionPosesList: []
+  fadeInDurations: []
+  fadeOutDurations: []
   defaultFadeDuration: 1
-  materialsToFade: []
-  currentIndex: 0
+  materialsToFadeOut: []
+  materialsToFadeIn: []
+  fadeOutIndex: 0
+  fadeInIndex: 0
 --- !u!1 &1551202199 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1480918138542391228, guid: 581b5b91cc0514b4cbfdc868b59664a1, type: 3}
@@ -5660,7 +5618,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -5674,7 +5632,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeOut
           m_Mode: 1
@@ -5899,7 +5857,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -5913,7 +5871,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeOut
           m_Mode: 1
@@ -6339,31 +6297,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: d2e9e78287b81f845a351827bb3c45e4, type: 2}
     m_Events:
     - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeOut
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeIn
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: HatchDoor01-02
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!23 &1642387884
@@ -6473,7 +6419,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeOut
           m_Mode: 1
@@ -6487,7 +6433,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -6932,9 +6878,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionPosesList: []
+  fadeInDurations: []
+  fadeOutDurations: []
   defaultFadeDuration: 1
-  materialsToFade: []
-  currentIndex: 0
+  materialsToFadeOut: []
+  materialsToFadeIn: []
+  fadeOutIndex: 0
+  fadeInIndex: 0
 --- !u!1 &1855304921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 266aac18e2ef2c645bcb5d67ed852449, type: 3}
@@ -6959,30 +6909,30 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeIn
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Pigeon02
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeOut
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Pigeon02
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1001 &1859392560
@@ -7272,30 +7222,30 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeIn
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Pigeon01
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeOut
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Pigeon01
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1001 &1911796113
@@ -7555,30 +7505,30 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeIn
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeInSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: LinesSwing01-01
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
-          m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
-          m_MethodName: FadeOut
-          m_Mode: 1
+        - m_Target: {fileID: 1432209567}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: LinesSwing01-01
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &2073101051
@@ -7660,39 +7610,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionPosesList:
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
-  - target: {fileID: 0}
-    fadeMode: 0
-    fadeInDuration: 1
-    fadeOutDuration: 1
-    hasFadedIn: 0
-    hasFadedOut: 0
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fadeInDurations: []
+  fadeOutDurations: []
   defaultFadeDuration: 1
-  materialsToFade: []
-  currentIndex: 0
+  materialsToFadeOut: []
+  materialsToFadeIn: []
+  fadeOutIndex: 0
+  fadeInIndex: 0
 --- !u!1 &2096672227
 GameObject:
   m_ObjectHideFlags: 0
@@ -7998,7 +7927,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeIn
           m_Mode: 1
@@ -8012,7 +7941,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeOut
           m_Mode: 1
@@ -8150,7 +8079,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1432209565}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: FadingTransitionLerp, Assembly-CSharp
           m_MethodName: FadeOut
           m_Mode: 1
