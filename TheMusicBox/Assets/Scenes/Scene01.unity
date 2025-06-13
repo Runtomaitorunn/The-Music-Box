@@ -1032,6 +1032,7 @@ Transform:
   - {fileID: 1399423589}
   - {fileID: 2106464969}
   - {fileID: 604559939}
+  - {fileID: 319771933}
   m_Father: {fileID: 1873841473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &259210507
@@ -1656,6 +1657,121 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: c01s01o01p04
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1001 &319771931
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 245504721}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.305
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.788
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.297
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      propertyPath: m_Name
+      value: c01s01o02p08
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 319771934}
+  m_SourcePrefab: {fileID: 100100000, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+--- !u!1 &319771932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+  m_PrefabInstance: {fileID: 319771931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &319771933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a990a4142adb5b74699ba799f249394b, type: 3}
+  m_PrefabInstance: {fileID: 319771931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &319771934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319771932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: d2e9e78287b81f845a351827bb3c45e4, type: 2}
+    - {fileID: 11400000, guid: 42608496bff65794db779d28618e05fd, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1075043810}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeInSignal
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: c01s01o02p08
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1075043810}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: c01s01o02p08
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &328916817 stripped
@@ -3499,6 +3615,8 @@ PlayableDirector:
     value: {fileID: 1873841472}
   - key: {fileID: -4325646223562874677, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
     value: {fileID: 1185653991}
+  - key: {fileID: 8035513325422359362, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 6eb9cdc01d2d17947b51de101611d436: {fileID: 2073101051}
@@ -4512,9 +4630,9 @@ MonoBehaviour:
     fadeOutDuration: 1
     fadeInReceived: 0
     fadeOutReceived: 0
-  - target: {fileID: 1624921801}
+  - target: {fileID: 319771932}
     fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
-    objectId: c01s01o02p04-01
+    objectId: c01s01o02p08
     fadeInDuration: 1
     fadeOutDuration: 1
     fadeInReceived: 0
@@ -5829,6 +5947,8 @@ PlayableDirector:
     value: {fileID: 2106464968}
   - key: {fileID: 1713395612598354950, guid: 8cb6e8db3d20c5b47999d207567c9a59, type: 2}
     value: {fileID: 604559938}
+  - key: {fileID: 82746115970560493, guid: 8cb6e8db3d20c5b47999d207567c9a59, type: 2}
+    value: {fileID: 319771932}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &1426376106
