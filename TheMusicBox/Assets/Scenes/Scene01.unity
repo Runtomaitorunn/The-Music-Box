@@ -856,6 +856,20 @@ PlayableDirector:
     value: {fileID: 2093272970}
   - key: {fileID: -6763988671231808433, guid: bd2b06b2cae4d454f8904f7c4e5b605a, type: 2}
     value: {fileID: 897340118}
+  - key: {fileID: -5614915289582892053, guid: bd2b06b2cae4d454f8904f7c4e5b605a, type: 2}
+    value: {fileID: 1642387881}
+  - key: {fileID: 5015173209920000878, guid: bd2b06b2cae4d454f8904f7c4e5b605a, type: 2}
+    value: {fileID: 946623965}
+  - key: {fileID: 1285823120902670348, guid: bd2b06b2cae4d454f8904f7c4e5b605a, type: 2}
+    value: {fileID: 328916817}
+  - key: {fileID: 6710530443718343446, guid: bd2b06b2cae4d454f8904f7c4e5b605a, type: 2}
+    value: {fileID: 2030723288}
+  - key: {fileID: -4884512750012372667, guid: bd2b06b2cae4d454f8904f7c4e5b605a, type: 2}
+    value: {fileID: 1473167245}
+  - key: {fileID: 3654138043754932355, guid: bd2b06b2cae4d454f8904f7c4e5b605a, type: 2}
+    value: {fileID: 992528307}
+  - key: {fileID: 7949834016443200047, guid: bd2b06b2cae4d454f8904f7c4e5b605a, type: 2}
+    value: {fileID: 1223128178}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &186700190
@@ -1979,6 +1993,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5597093752139037465, guid: 581b5b91cc0514b4cbfdc868b59664a1, type: 3}
   m_PrefabInstance: {fileID: 946623961}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &328916821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328916817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 42608496bff65794db779d28618e05fd, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 232876843}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: LinesSlam01-01
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &356738041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3551,7 +3595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &603714346
 Transform:
   m_ObjectHideFlags: 0
@@ -4278,6 +4322,27 @@ MonoBehaviour:
     fadeMode: {fileID: 11400000, guid: 069610455c2ecd34db625cc3aab4f4f1, type: 2}
     objectId: c01s01o05p08
     fadeInDuration: 1
+    fadeOutDuration: 1
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 2030723288}
+    fadeMode: {fileID: 11400000, guid: 3600b5a1f4c62084991ea9e31f64cb37, type: 2}
+    objectId: LinesSwing01-02
+    fadeInDuration: 0
+    fadeOutDuration: 1
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 328916817}
+    fadeMode: {fileID: 11400000, guid: 3600b5a1f4c62084991ea9e31f64cb37, type: 2}
+    objectId: LinesSlam01-01
+    fadeInDuration: 0
+    fadeOutDuration: 1
+    fadeInReceived: 0
+    fadeOutReceived: 0
+  - target: {fileID: 1223128178}
+    fadeMode: {fileID: 11400000, guid: 3600b5a1f4c62084991ea9e31f64cb37, type: 2}
+    objectId: LinesSlam01-01
+    fadeInDuration: 0
     fadeOutDuration: 1
     fadeInReceived: 0
     fadeOutReceived: 0
@@ -5441,6 +5506,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2703229899678404817, guid: 581b5b91cc0514b4cbfdc868b59664a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 946623966}
+    - targetCorrespondingSourceObject: {fileID: 5597093752139037465, guid: 581b5b91cc0514b4cbfdc868b59664a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 328916821}
     - targetCorrespondingSourceObject: {fileID: 8278052507069681292, guid: 581b5b91cc0514b4cbfdc868b59664a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2030723292}
@@ -5816,6 +5884,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 997532817}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6639727962314386104, guid: 292133f436804294b99f43f9d11f4542, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1223128182}
     - targetCorrespondingSourceObject: {fileID: 4417517298767974914, guid: 292133f436804294b99f43f9d11f4542, type: 3}
       insertIndex: -1
       addedObject: {fileID: 992528308}
@@ -7026,6 +7097,41 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: c01s01o05p05
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &1223128178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6639727962314386104, guid: 292133f436804294b99f43f9d11f4542, type: 3}
+  m_PrefabInstance: {fileID: 992528305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1223128182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223128178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 42608496bff65794db779d28618e05fd, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 232876843}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: LinesSlam01-01
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1249454269
@@ -12112,6 +12218,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: LinesSwing01-01
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 232876843}
+          m_TargetAssemblyTypeName: FadeTransitionManager, Assembly-CSharp
+          m_MethodName: FadeOutSignal
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: LinesSwing01-02
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
