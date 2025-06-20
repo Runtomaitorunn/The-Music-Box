@@ -4937,7 +4937,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -4954,6 +4954,12 @@ PlayableDirector:
     value: {fileID: 1185653991}
   - key: {fileID: 8035513325422359362, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 4070872303377383493, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 538329244}
+  - key: {fileID: -5952109775316650342, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 1146628804}
+  - key: {fileID: -9214196219413463200, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 603714345}
   m_ExposedReferences:
     m_References:
     - 6eb9cdc01d2d17947b51de101611d436: {fileID: 2073101051}
@@ -4961,9 +4967,12 @@ PlayableDirector:
     - 60981d361c8844c49b4f947f02a89cc0: {fileID: 500918420}
     - 1d1d391a8e7d04845afd31e32bcfc0cc: {fileID: 1779068184}
     - bc847e67c60ec144ba4954a17bb538f0: {fileID: 1610874381}
+    - a191014e9b382bf4084bdfaa651535b4: {fileID: 1134982260}
     - 7f5c4f5b45c863448ae622b96c60e435: {fileID: 1414224103}
     - fc600bf77e137bc41a4b3861e7901400: {fileID: 297566107}
     - d5d208795dbb1114eb557994b3630fed: {fileID: 305133004}
+    - 05e597271d432d14a928fc6f0c521a09: {fileID: 629835036}
+    - 4b142684fd2b01e498988509604d684f: {fileID: 147355616}
 --- !u!4 &878583340
 Transform:
   m_ObjectHideFlags: 0
@@ -11767,37 +11776,6 @@ MonoBehaviour:
             m_StringArgument: c01s01o04p02
             m_BoolArgument: 0
           m_CallState: 2
---- !u!1 &1939492933
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1939492934}
-  m_Layer: 0
-  m_Name: '[Turn ON "Play On Awake" to Test Timelines]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1939492934
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939492933}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1940495374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13376,5 +13354,4 @@ SceneRoots:
   - {fileID: 603714346}
   - {fileID: 538329245}
   - {fileID: 1146628805}
-  - {fileID: 1939492934}
   - {fileID: 878583340}
