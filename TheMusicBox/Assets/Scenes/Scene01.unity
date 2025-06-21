@@ -4397,6 +4397,8 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 990794790006807500, guid: 9726e158a2747b04b89fc8399dff4d9a, type: 2}
     value: {fileID: 1697038883}
+  - key: {fileID: 3469657517270691786, guid: 9726e158a2747b04b89fc8399dff4d9a, type: 2}
+    value: {fileID: 946623965}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &635645925
@@ -5615,7 +5617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!320 &878583339
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -5626,7 +5628,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -7626,6 +7628,8 @@ PlayableDirector:
     value: {fileID: 356738042}
   - key: {fileID: 3062460997604322364, guid: d5229b44a062b0041b217bf2b4a6f4f8, type: 2}
     value: {fileID: 0}
+  - key: {fileID: -2039559705873803612, guid: d5229b44a062b0041b217bf2b4a6f4f8, type: 2}
+    value: {fileID: 946623965}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1146628804
@@ -12172,7 +12176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d33ed5c3787c863409e578961755163a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
