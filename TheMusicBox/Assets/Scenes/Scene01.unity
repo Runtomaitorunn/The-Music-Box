@@ -2252,7 +2252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &305133005
 Transform:
   m_ObjectHideFlags: 0
@@ -6134,51 +6134,62 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -2930500587015911686, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-    value: {fileID: 121018125}
-  - key: {fileID: -4642721234128090572, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-    value: {fileID: 297566107}
-  - key: {fileID: -2800911555827527880, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-    value: {fileID: 2073101051}
-  - key: {fileID: 3500351197703278433, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-    value: {fileID: 1873841472}
-  - key: {fileID: -4325646223562874677, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-    value: {fileID: 1185653991}
   - key: {fileID: 8035513325422359362, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 4070872303377383493, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-    value: {fileID: 538329244}
-  - key: {fileID: -5952109775316650342, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-    value: {fileID: 1146628804}
-  - key: {fileID: -9214196219413463200, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-    value: {fileID: 603714345}
   - key: {fileID: -6845119581040721586, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 3941889307500515116, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
-    value: {fileID: 1049217012}
   - key: {fileID: -5553878472951534883, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
     value: {fileID: 0}
   - key: {fileID: -9016675106930036933, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
     value: {fileID: 0}
   - key: {fileID: -4946086196851332301, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
     value: {fileID: 0}
-  - key: {fileID: -4962521656030908087, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+  - key: {fileID: -6495495192412412212, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 1049217012}
+  - key: {fileID: 4899193509508363236, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 121018125}
+  - key: {fileID: 2698263212114410639, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 297566107}
+  - key: {fileID: 4005507567683999270, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 2073101051}
+  - key: {fileID: 2009403047661699410, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 1873841472}
+  - key: {fileID: -3046832105245962848, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 1185653991}
+  - key: {fileID: -6223512129248974793, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 603714345}
+  - key: {fileID: 1164318485419496201, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 538329244}
+  - key: {fileID: -197121807688836761, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
+    value: {fileID: 1146628804}
+  - key: {fileID: 8716744149903448666, guid: bdf158b6792da8c41afc09e8ee2dffbe, type: 2}
     value: {fileID: 678691730}
   m_ExposedReferences:
     m_References:
+    - 58f3b35aa5488c84b8db2173f02f6f12: {fileID: 1779068184}
+    - ce9eed4b398f2954b94923be34d4bb9e: {fileID: 629835036}
     - 87a98300ba18f064c81b22094a7bcd32: {fileID: 1660206826}
     - 6eb9cdc01d2d17947b51de101611d436: {fileID: 2073101051}
+    - 07fc91534c9c6c3488d5f94e51415e4b: {fileID: 1660206826}
+    - 37f4eca5deb85374e9ce56deea582079: {fileID: 500918420}
     - 14d0f80eb18beb249816845eb2463ea9: {fileID: 297566107}
     - 60981d361c8844c49b4f947f02a89cc0: {fileID: 500918420}
     - fffb22fa4b15f91499825dbd1561b5ba: {fileID: 1644478060}
     - 1d1d391a8e7d04845afd31e32bcfc0cc: {fileID: 1779068184}
     - cf741acae2134ac4d9f77865b2fd1d07: {fileID: 1644478060}
+    - 1bbb7c7935c34e34b86d18c1e05ce7cd: {fileID: 1414224103}
     - bc847e67c60ec144ba4954a17bb538f0: {fileID: 1610874381}
     - a191014e9b382bf4084bdfaa651535b4: {fileID: 1134982260}
     - 7f5c4f5b45c863448ae622b96c60e435: {fileID: 1414224103}
+    - 50808ca64cc85da48a083b8d99be086d: {fileID: 1134982260}
     - fc600bf77e137bc41a4b3861e7901400: {fileID: 297566107}
     - d5d208795dbb1114eb557994b3630fed: {fileID: 305133004}
     - 05e597271d432d14a928fc6f0c521a09: {fileID: 629835036}
+    - 5a21fb59fbb1e5a4d83cdc6835b4b6f0: {fileID: 1610874381}
+    - 1912578e11f4263449a90df0af7415bb: {fileID: 305133004}
+    - 46381b8331c0c624d8b8822b2b5eee2f: {fileID: 147355616}
+    - 7308b2a10892a5e41bea01b8af91d0af: {fileID: 1779068184}
+    - 5f486a02260d128458884dca48c9f4d8: {fileID: 1644478060}
     - 4b142684fd2b01e498988509604d684f: {fileID: 147355616}
 --- !u!4 &878583340
 Transform:
@@ -15004,7 +15015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2073101052
 Transform:
   m_ObjectHideFlags: 0
