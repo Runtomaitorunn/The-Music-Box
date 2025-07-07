@@ -1,0 +1,2 @@
+D:\TheMusicBox\ProjectRepository\TheMusicBox\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+D:\TheMusicBox\ProjectRepository\TheMusicBox\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
